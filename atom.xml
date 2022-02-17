@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Ruoyi&#39;s HomePage</title>
   
   
-  <link href="https://github.com/RuoyiDu/homepage.github.io/atom.xml" rel="self"/>
+  <link href="https://ruoyidu.github.io/atom.xml" rel="self"/>
   
-  <link href="https://github.com/RuoyiDu/homepage.github.io/"/>
+  <link href="https://ruoyidu.github.io/"/>
   <updated>2022-02-14T18:22:25.321Z</updated>
-  <id>https://github.com/RuoyiDu/homepage.github.io/</id>
+  <id>https://ruoyidu.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Ruoyi Du</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/RuoyiDu/homepage.github.io/2022/02/15/hello-world/"/>
-    <id>https://github.com/RuoyiDu/homepage.github.io/2022/02/15/hello-world/</id>
+    <link href="https://ruoyidu.github.io/2022/02/15/hello-world/"/>
+    <id>https://ruoyidu.github.io/2022/02/15/hello-world/</id>
     <published>2022-02-14T18:22:25.321Z</published>
     <updated>2022-02-14T18:22:25.321Z</updated>
     
