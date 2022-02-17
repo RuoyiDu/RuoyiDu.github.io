@@ -6,7 +6,7 @@
   <link href="https://ruoyidu.github.io/atom.xml" rel="self"/>
   
   <link href="https://ruoyidu.github.io/"/>
-  <updated>2022-02-14T18:22:25.321Z</updated>
+  <updated>2022-02-17T07:48:18.977Z</updated>
   <id>https://ruoyidu.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>publications</title>
+    <link href="https://ruoyidu.github.io/2022/02/17/publications/"/>
+    <id>https://ruoyidu.github.io/2022/02/17/publications/</id>
+    <published>2022-02-17T07:22:47.000Z</published>
+    <updated>2022-02-17T07:48:18.977Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/../figures/eccv20_1.png" alt="avatar"> Ruoyi Du, Jiyang Xie, Zhanyu Ma*, Dongliang Chang, Yi-Zhe Song, and Jun Guo, “Progressive Learning of Category-Consistent Multi-Granularity Features for Fine-Grained Visual Classification”, IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), accepted. DOI Code</p><p>Ruoyi Du, Dongliang Chang, Ayan Kumar Bhunia, Jiyang Xie, Zhanyu Ma*, Yi-Zhe Song, and Jun Guo, “Fine-Grained Visual Classification via Progressive Multi-Granularity Training of Jigsaw Patches”, in Proceedings of European Conference on Computer Vision (ECCV), 2020. Arxiv Code</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/../figures/eccv20_1.png&quot; alt=&quot;avatar&quot;&gt; Ruoyi Du, Jiyang Xie, Zhanyu Ma*, Dongliang Chang, Yi-Zhe Song, and Jun Guo, “Progressi</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
