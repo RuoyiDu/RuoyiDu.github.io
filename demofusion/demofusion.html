@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DemoFusion</title>
+
+    <meta name="description"
+        content="DemoFusion: Democratising High-resolution Image Generation without a Sweat">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <!--FACEBOOK-->
+    <meta property="og:image" content="/assets/img/merf/social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creiser.github.io/merf" />
+    <meta property="og:title" content="MERF" />
+    <meta property="og:description"
+        content="Project page for MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes." />
+
+    <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MERF" />
+    <meta name="twitter:description"
+        content="Project page for MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes." />
+    <meta name="twitter:image" content="/assets/img/merf/social.png" />
+
+    <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎃</text></svg>">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="/assets/css/merf/app.css">
+
+    <link rel="stylesheet" href="/assets/css/merf/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/merf/dics.min.css">
+    <script src="/assets/js/merf/dics.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', domReady);
+        function domReady() {
+            for (const e of document.querySelectorAll(".b-dics")) {
+                new Dics({
+                    container: e,
+                    textPosition: "top"
+                });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>DemoFusion</b>: Democratising High-resolution Image Generation without a Sweat</br>
+                <small>
+                    arXiv
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://ruoyidu.github.io/">
+                          Ruoyi Du<sup>1</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.dongliangchang.cn/">
+                          Dongliang Chang<sup>2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://homepages.inf.ed.ac.uk/thospeda/">
+                          Timothy M. Hospedales<sup>3</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">
+                          Yi-Zhe Song<sup>4</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://zhanyuma.cn/">
+                            Zhanyu Ma<sup>1</sup>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        Beijing University of Posts and Telecommunications<sup>1</sup>
+                    </li>
+                    <li>
+                        Tsinghua University<sup>2</sup>
+                    </li>
+                    <li>
+                        University of Edinburgh<sup>3</sup>
+                    </li>
+                    <li>
+                        University of Surrey<sup>4</sup>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://arxiv.org/abs/2302.12249">
+<!--                             <image src="/assets/img/merf/paper.png" height="120px"> -->
+                                <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+<!--                     <li>
+                        <a href="https://youtu.be/3EACM2JAcxc">
+                            <image src="/assets/img/merf/youtube_icon.png" height="120px">
+                                <h4><strong>Video</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#demos">
+                            <image src="/assets/img/merf/demo.png" height="120px">
+                                <h4><strong>Demos</strong></h4>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://github.com/google-research/google-research/tree/master/merf">
+<!--                             <image src="/assets/img/merf/github_pad.png" height="120px"> -->
+                                <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <!-- <image src="/assets/img/merf/rays.jpg" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify">
+                   While the diffusion model has seen rapid advancements, its progression towards high-resolution generation is tempered by the significant resource demands accompanying increased resolutions. In this paper, we argue that existing well-trained latent diffusion models already harbor sufficient prior knowledge to generate higher-resolution images; they just need the proper guidance to unlock this potential. To democratise high-resolution generation, we introduce a novel denoising framework that can be applied to most latent diffusion models to produce higher-resolution images dubbed DemoFusion. DemoFusion does not require any model tuning or additional memory. The only trade-off? More patience, which is a prerequisite even when employing high-resolution models to begin with. Specifically, DemoFusion is built upon the fusion of multiple diffusion paths and works in a progressive upscaling manner. We also devise two global guidance techniques, skip residual and dilated sampling, to steer various diffusion paths, ensuring the local content generated harmonizes with the overarching image structure, thereby eliminating any production of inconsistent or redundant content. Honoring the intrinsic nature of the diffusion model, which prioritizes restoring the macro structure before the minutiae during denoising, we gradually diminish the global guidance throughout the process, allowing the entire framework to work smoothly. Experimental results show that DemoFusion can not only generate high-resolution images but also deliver local details that are unattainable at lower-resolution generation. 
+                </p>
+            </div>
+        </div>
+
+
+<!--         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/3EACM2JAcxc" allowfullscreen
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+      
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Methodology
+                </h3>
+                <br>
+                <image src="/assets/img/merf/overview.png" style="width:100%;" class="img-responsive center-block" alt="overview">
+                    <br>
+                    <p class="text-justify">
+                        
+                    </p>
+            </div>
+        </div>
+        
+
+        <div class="row comp-margin">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    SNeRG++ vs MERF
+                </h3>
+                <div class="b-dics" style="width: 100%">
+                    <img src="/assets/img/merf/comp/stump_snerg.png" alt="SNeRG++ (210 MB)" />
+                    <img src="/assets/img/merf/comp/stump_merf.png" alt="MERF (220 MB)" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row comp-margin">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="b-dics" style="width: 100%">
+                    <img src="/assets/img/merf/comp/kitchenlego_snerg.png" alt="SNeRG++  (213 MB)" />
+                    <img src="/assets/img/merf/comp/kitchenlego_merf.png" alt="MERF (233 MB)" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="b-dics" style="width: 100%">
+                    <img src="/assets/img/merf/comp/gardenvase_snerg.png" alt="SNeRG++  (117 MB)" />
+                    <img src="/assets/img/merf/comp/gardenvase_merf.png" alt="MERF (198 MB)" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <p>
+                    If you want to cite our work, please use:
+                </p>
+                <pre>
+@article{Reiser2023SIGGRAPH,
+    title={MERF: Memory-Efficient Radiance Fields for
+        Real-time View Synthesis in Unbounded Scenes},
+    author={Christian Reiser and Richard Szeliski and 
+        Dor Verbin and Pratul P. Srinivasan and Ben Mildenhall
+        and Andreas Geiger and Jonathan T. Barron and Peter Hedman},
+    journal={SIGGRAPH},
+    year={2023}
+}</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    We thank Marcos Seefelder, Julien Philip and Simon Rodriguez for
+                    their suggestions on shader optimization. This work was supported
+                    by the ERC Starting Grant LEGO3D (850533) and the DFG EXC
+                    number 2064/1 - project number 390727645. The website template was borrowed from <a href="http://mgharbi.com/">Michaël
+                        Gharbi</a>.
+                    Image sliders are based on <a href="https://github.com/abelcabezaroman/definitive-image-comparison-slider">dics</a>.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
