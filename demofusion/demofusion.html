@@ -63,13 +63,13 @@ horizontal: false
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>DemoFusion</b>: Democratising High-resolution Image Generation without a Sweat</br>
-                <small>
+                <b>DemoFusion</b>: Democratising High-Resolution Image Generation With No $$$</br>
+<!--                 <small>
                     arXiv
-                </small>
+                </small> -->
             </h2>
         </div>
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
@@ -112,7 +112,7 @@ horizontal: false
                         University of Surrey<sup>4</sup>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
 
 
@@ -162,7 +162,7 @@ horizontal: false
                 </h3>
                 <image src="./figures/illustration.jpg" style="width:100%;" class="img-responsive center-block" alt="overview"><br>
                 <p class="text-justify">
-                   While the diffusion model has seen rapid advancements, its progression towards high-resolution generation is tempered by the significant resource demands accompanying increased resolutions. In this paper, we argue that existing well-trained latent diffusion models already harbor sufficient prior knowledge to generate higher-resolution images; they just need the proper guidance to unlock this potential. To democratise high-resolution generation, we introduce a novel denoising framework that can be applied to most latent diffusion models to produce higher-resolution images dubbed DemoFusion. DemoFusion does not require any model tuning or additional memory. The only trade-off? More patience, which is a prerequisite even when employing high-resolution models to begin with. Specifically, DemoFusion is built upon the fusion of multiple diffusion paths and works in a progressive upscaling manner. We also devise two global guidance techniques, skip residual and dilated sampling, to steer various diffusion paths, ensuring the local content generated harmonizes with the overarching image structure, thereby eliminating any production of inconsistent or redundant content. Honoring the intrinsic nature of the diffusion model, which prioritizes restoring the macro structure before the minutiae during denoising, we gradually diminish the global guidance throughout the process, allowing the entire framework to work smoothly. Experimental results show that DemoFusion can not only generate high-resolution images but also deliver local details that are unattainable at lower-resolution generation. 
+                    High-resolution image generation with Generative Artificial Intelligence (GenAI) has immense potential but often remains behind paywalls, limiting accessibility. This paper aims to democratize high-resolution GenAI by removing these barriers and making it accessible to a broader audience, while introducing a novel approach that necessitates only a bit more patience. We reveal that current Latent Diffusion Models (LDMs) inherently possess untapped potential for high-resolution image generation. Our proposed DemoFusion framework seamlessly integrates with open-source GenAI models, employing Progressive Upscaling, Skip Residual, and Dilated Sampling mechanisms to achieve high-resolution image generation. The progressive nature of DemoFusion requires more passes, but the additional costs at lower resolutions are less significant compared to the unavoidable cost at the target resolution.
                 </p>
             </div>
         </div>
