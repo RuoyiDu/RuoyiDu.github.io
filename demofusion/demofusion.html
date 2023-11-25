@@ -343,13 +343,15 @@ horizontal: false
         </div>
 
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
                 <h3>
                     <b>Upscaling Real Images</b>
                 </h3>
                 <p class="text-justify">
                      Since DemoFusion works in a progressive manner, we can replace the output of phase #1 with representations obtained by encoding real images, thereby achieving upscaling of real images. However, we carefully avoid using the term "super resolution", as the outputs tend to lean towards the latent data distribution of the base LDM, making this process more akin to image generation based on a real image.
                 </p>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
                 <br>
                 <image src="./figures/real_image.jpg" style="width:100%;" class="img-responsive center-block" alt="overview">
                 <br>
